@@ -18,8 +18,7 @@
   --command-section-background-color: #f5f4fa;
   --footer-contacts-textcolor: rgba(255, 255, 255, 0.6);
   --card-gap: 30px;
-  --line-color: rgba(236, 236, 236, 1)
-
+  --line-color: rgba(236, 236, 236, 1);
 }
 /* COMPONENTS */
 .container {
@@ -53,7 +52,9 @@ ul {
   padding-left: 0px;
 }
 /* обнуление свойств кнопки */
-.button, .modal-btn, .modal-btn-portfolio {
+.button,
+.modal-btn,
+.modal-btn-portfolio {
   border: none;
   background: transparent;
   color: inherit;
@@ -70,7 +71,8 @@ ul {
 .menu {
   border-bottom: var(--line-color) solid 1px;
 }
-.menu .container, .nav-section {
+.menu .container,
+.nav-section {
   display: flex;
   align-items: center;
 }
@@ -118,6 +120,9 @@ ul {
   padding: 32px 0px;
 }
 .contact-list-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -131,6 +136,16 @@ ul {
 .contact-list-item:hover,
 .contact-list-item:focus {
   color: var(--theme-textcolor);
+}
+.envelope-icon {
+  width: 16px;
+  height: 12px;
+  margin-right: 7px;
+  fill: var(--paragraph-textcolor);
+}
+.envelope-icon:hover,
+.envelope-icon:focus {
+  fill: var(--theme-textcolor);
 }
 /* ============ styles for hero ============ */
 .hero-section {
@@ -178,7 +193,7 @@ ul {
 }
 .methods-list {
   display: flex;
-  margin-left: calc(-1*var(--card-gap));
+  margin-left: calc(-1 * var(--card-gap));
   padding: 0;
 }
 .methods-list-item {
@@ -208,10 +223,10 @@ ul {
 .tasks-images {
   display: flex;
   margin-top: 50px;
-  margin-left: calc(-1*var(--card-gap));
+  margin-left: calc(-1 * var(--card-gap));
 }
 .tasks-images > .tasks-images-item {
-flex-basis: calc((100% / 3) - var(--card-gap));
+  flex-basis: calc((100% / 3) - var(--card-gap));
 }
 .tasks-images-item .gap {
   display: block;
@@ -240,14 +255,15 @@ flex-basis: calc((100% / 3) - var(--card-gap));
 .command-list {
   display: flex;
   margin-top: 50px;
-  margin-left: calc(-1*var(--card-gap));
+  margin-left: calc(-1 * var(--card-gap));
 }
 .command-list > .command-list-item {
   flex-basis: calc((100% / 3) - var(--card-gap));
 }
 .command-list-item {
   text-align: center;
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
   margin-left: var(--card-gap);
 }
@@ -271,7 +287,7 @@ flex-basis: calc((100% / 3) - var(--card-gap));
   padding: 60px 0px;
   width: 1600px;
   max-width: 100%;
-  margin: 0 auto; 
+  margin: 0 auto;
   background-color: var(--main-background-color);
 }
 .footer-studio {
@@ -339,7 +355,8 @@ flex-basis: calc((100% / 3) - var(--card-gap));
 .modal-btn-portfolio:focus {
   color: var(--hover-textcolor);
   background-color: var(--theme-textcolor);
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 .thumb-list h3 {
   font-weight: 700;
@@ -363,8 +380,8 @@ flex-basis: calc((100% / 3) - var(--card-gap));
 .thumb-list {
   display: flex;
   flex-wrap: wrap;
-  margin-left: calc(-1*var(--card-gap));
-  margin-top: calc(-1*var(--card-gap));
+  margin-left: calc(-1 * var(--card-gap));
+  margin-top: calc(-1 * var(--card-gap));
   margin-top: 34px;
 }
 .thumb-list .thumb {
