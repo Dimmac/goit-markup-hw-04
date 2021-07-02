@@ -263,6 +263,7 @@ ul {
 }
 .command-thumb {
   padding: 30px 60px;
+  background-color: var(--hover-textcolor);
 }
 .tasks-command-title {
   text-align: center;
@@ -301,6 +302,25 @@ ul {
   line-height: 1.19;
   letter-spacing: 0.03em;
   color: var(--paragraph-textcolor);
+}
+.social-list list {
+  display: flex;
+  /* justify-content: space-between; */
+}
+.social-list-item {
+}
+.social-list-link {
+  display: block;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: var(--footer-contacts-textcolor);
+}
+.icon-social-link {
+  width: 20px;
+  height: 20px;
 }
 /* ============ styles for footer ============ */
 .footer-section {
