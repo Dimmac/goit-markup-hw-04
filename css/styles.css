@@ -19,6 +19,7 @@
   --footer-contacts-textcolor: rgba(255, 255, 255, 0.6);
   --card-gap: 30px;
   --line-color: rgba(236, 236, 236, 1);
+  --icon-symbol-color: rgba(175, 177, 184, 1);
 }
 /* COMPONENTS */
 .container {
@@ -77,8 +78,8 @@ ul {
   align-items: center;
 }
 .nav-section {
-  padding-top: 26px;
-  padding-bottom: 22px;
+  padding-top: 24px;
+  padding-bottom: 25px;
 }
 .logo {
   font-family: "Raleway";
@@ -163,7 +164,6 @@ ul {
   padding-top: 200px;
   padding-bottom: 200px;
   margin: 0 auto;
-  width: 1600px;
   max-width: 100%;
   background-color: var(--main-background-color);
 }
@@ -245,12 +245,14 @@ ul {
   margin-top: 50px;
   margin-left: calc(-1 * var(--card-gap));
 }
+.tasks-images-item {
+  margin-left: var(--card-gap);
+}
 .tasks-images > .tasks-images-item {
   flex-basis: calc((100% / 3) - var(--card-gap));
 }
 .tasks-images-item .gap {
   display: block;
-  margin-left: var(--card-gap);
 }
 /* ============ styles for command ============ */
 .command-section {
@@ -262,7 +264,7 @@ ul {
   background-color: var(--command-section-background-color);
 }
 .command-thumb {
-  padding: 30px 60px;
+  padding: 30px;
   background-color: var(--hover-textcolor);
 }
 .tasks-command-title {
@@ -289,7 +291,6 @@ ul {
   margin-left: var(--card-gap);
 }
 .command-list-item-title {
-  margin-top: var(--card-gap);
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
@@ -303,24 +304,53 @@ ul {
   letter-spacing: 0.03em;
   color: var(--paragraph-textcolor);
 }
-.social-list list {
+.social-list {
   display: flex;
-  /* justify-content: space-between; */
-}
-.social-list-item {
+  justify-content: space-between;
+  margin-top: 16px;
 }
 .social-list-link {
-  display: block;
+  display: flex;
   align-items: center;
   justify-content: center;
   width: 44px;
   height: 44px;
   border-radius: 50%;
-  background-color: var(--footer-contacts-textcolor);
+  background-color: var(--card-gap);
+  fill: var(--icon-symbol-color);
 }
 .icon-social-link {
   width: 20px;
   height: 20px;
+}
+.social-list-link:hover,
+.social-list-link:focus {
+  background-color: var(--theme-textcolor);
+}
+.social-list-link:hover,
+.social-list-link:focus {
+  fill: var(--hover-textcolor);
+}
+/* ============ styles for CLIENTS ============ */
+.clients-list {
+}
+.clients-list-item {
+}
+.clients-list-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 170px;
+  height: 92px;
+  border: 1px solid #afb1b8;
+  box-sizing: border-box;
+  border-radius: 4px;
+  padding: 16px 32px;
+}
+.icon-clients {
+  width: 106px;
+  height: 60px;
+  fill: var(--icon-symbol-color);
 }
 /* ============ styles for footer ============ */
 .footer-section {
@@ -366,13 +396,13 @@ ul {
 }
 /* ============ styles for PAGE portfolio ============ */
 .port {
-  padding-top: 79px;
-  padding-bottom: 109px;
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 .btn-portfolio {
   display: flex;
   justify-content: center;
-  margin-bottom: 14px;
+  margin-bottom: 50px;
 }
 .modal-btn-portfolio {
   padding: 6px 22px;
@@ -422,7 +452,6 @@ ul {
   flex-wrap: wrap;
   margin-left: calc(-1 * var(--card-gap));
   margin-top: calc(-1 * var(--card-gap));
-  margin-top: 34px;
 }
 .thumb-list .thumb {
   margin-left: var(--card-gap);
