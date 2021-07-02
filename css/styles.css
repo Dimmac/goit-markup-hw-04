@@ -137,14 +137,24 @@ ul {
 .contact-list-item:focus {
   color: var(--theme-textcolor);
 }
-.envelope-icon {
+.icon-envelope {
   width: 16px;
   height: 12px;
-  margin-right: 7px;
+  margin-right: 10px;
   fill: var(--paragraph-textcolor);
 }
-.envelope-icon:hover,
-.envelope-icon:focus {
+.icon-envelope:hover,
+.icon-envelope:focus {
+  fill: var(--theme-textcolor);
+}
+.icon-smartphone {
+  width: 10px;
+  height: 16px;
+  margin-right: 10px;
+  fill: var(--paragraph-textcolor);
+}
+.icon-smartphone:hover,
+.icon-smartphone:focus {
   fill: var(--theme-textcolor);
 }
 /* ============ styles for hero ============ */
@@ -214,6 +224,16 @@ ul {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--paragraph-textcolor);
+}
+.icon-methods {
+  width: 70px;
+  height: 70px;
+}
+.box-icon-methods {
+  margin-bottom: 30px;
+  padding: 25px 100px;
+  background: var(--command-section-background-color);
+  border-radius: 4px;
 }
 /* ============ styles for tasks ============ */
 .tasks {
