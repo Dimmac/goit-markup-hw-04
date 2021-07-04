@@ -326,13 +326,26 @@ ul {
 .social-list-link:hover,
 .social-list-link:focus {
   background-color: var(--theme-textcolor);
-}
-.social-list-link:hover,
-.social-list-link:focus {
   fill: var(--hover-textcolor);
 }
 /* ============ styles for CLIENTS ============ */
+.clients .container {
+  padding: 94px 0px;
+}
+.clients-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--title-textcolor);
+}
 .clients-list {
+  display: flex;
+  margin-top: 50px;
+}
+.clients-list .clients-list-item:not(:last-child) {
+  margin-right: 30px;
 }
 .clients-list-item {
 }
@@ -340,17 +353,23 @@ ul {
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 16px 32px;
   width: 170px;
   height: 92px;
   border: 1px solid #afb1b8;
   box-sizing: border-box;
   border-radius: 4px;
-  padding: 16px 32px;
+  fill: var(--icon-symbol-color);
+}
+.clients-list-link:hover,
+.clients-list-link:focus {
+  fill: var(--theme-textcolor);
+  border-color: var(--theme-textcolor);
 }
 .icon-clients {
   width: 106px;
   height: 60px;
-  fill: var(--icon-symbol-color);
+  /* fill: var(--icon-symbol-color); */
 }
 /* ============ styles for footer ============ */
 .footer-section {
@@ -393,6 +412,53 @@ ul {
 }
 .address-list-item:first-child {
   margin-top: 0;
+}
+.social-list {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 16px;
+}
+/* .social-list-link {} */
+/* display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: var(--card-gap);
+  fill: var(--icon-symbol-color);
+}
+.icon-social-link {
+  width: 20px;
+  height: 20px;
+}
+.social-list-link:hover,
+.social-list-link:focus {
+  background-color: var(--theme-textcolor);
+  fill: var(--hover-textcolor);
+} */
+.footer-section .container {
+  display: flex;
+}
+.footer-basic {
+}
+.join {
+  margin-top: 12px;
+  margin-left: 70px;
+}
+.join-title {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  color: var(--hover-textcolor);
+}
+.social-list-footer {
+  display: flex;
+}
+.social-list-link {
+  fill: rgba(255, 255, 255, 0.1);
 }
 /* ============ styles for PAGE portfolio ============ */
 .port {
