@@ -166,6 +166,14 @@ ul {
   margin: 0 auto;
   max-width: 100%;
   background-color: var(--main-background-color);
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/hat/Img-hat.jpeg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .hero-section .container {
   width: 696px;
@@ -347,8 +355,6 @@ ul {
 .clients-list .clients-list-item:not(:last-child) {
   margin-right: 30px;
 }
-.clients-list-item {
-}
 .clients-list-link {
   display: flex;
   align-items: center;
@@ -369,7 +375,6 @@ ul {
 .icon-clients {
   width: 106px;
   height: 60px;
-  /* fill: var(--icon-symbol-color); */
 }
 /* ============ styles for footer ============ */
 .footer-section {
@@ -418,29 +423,8 @@ ul {
   justify-content: space-between;
   margin-top: 16px;
 }
-/* .social-list-link {} */
-/* display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 44px;
-  height: 44px;
-  border-radius: 50%;
-  background-color: var(--card-gap);
-  fill: var(--icon-symbol-color);
-}
-.icon-social-link {
-  width: 20px;
-  height: 20px;
-}
-.social-list-link:hover,
-.social-list-link:focus {
-  background-color: var(--theme-textcolor);
-  fill: var(--hover-textcolor);
-} */
 .footer-section .container {
   display: flex;
-}
-.footer-basic {
 }
 .join {
   margin-top: 12px;
@@ -456,10 +440,26 @@ ul {
 }
 .social-list-footer {
   display: flex;
+  margin-top: 20px;
 }
-.social-list-link {
-  fill: rgba(255, 255, 255, 0.1);
+.social-list-item-footer:not(:last-child) {
+  margin-right: 10px;
 }
+.social-list-link-footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+  fill: var(--hover-textcolor);
+}
+.social-list-link-footer:hover,
+.social-list-link-footer:focus {
+  background-color: var(--theme-textcolor);
+}
+
 /* ============ styles for PAGE portfolio ============ */
 .port {
   padding-top: 94px;
@@ -508,6 +508,10 @@ ul {
   line-height: 1.87;
   letter-spacing: 0.03em;
   color: var(--paragraph-textcolor);
+}
+.thumb:hover {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 .btn-portfolio .modal-btn-portfolio.current {
   background-color: var(--theme-textcolor);
