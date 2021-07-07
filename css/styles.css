@@ -526,9 +526,13 @@ ul {
   margin-top: var(--card-gap);
   flex-basis: calc((100% / 3) - var(--card-gap));
 }
-.thumb:hover,
-.thumb:focus {
-  box-sizing: border-box;
+.thumb-image:hover,
+.thumb-image:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+.thumb-text:hover,
+.thumb-text:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
