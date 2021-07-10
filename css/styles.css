@@ -526,22 +526,20 @@ ul {
   margin-top: var(--card-gap);
   flex-basis: calc((100% / 3) - var(--card-gap));
 }
-.thumb-image:hover,
-.thumb-image:focus {
+.thumb-link {
+  display: inline-block;
+}
+.thumb-link:hover,
+.thumb-link:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
-.thumb-text:hover,
-.thumb-text:focus {
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-    1px 4px 6px rgba(0, 0, 0, 0.16);
+.thumb-image {
+  display: block;
+  width: 100%;
 }
 .thumb-text {
   padding: 20px 24px;
   border: var(--line-color) solid 1px;
   border-top: 0;
-}
-.thumb-image {
-  display: block;
-  width: 100%;
 }
